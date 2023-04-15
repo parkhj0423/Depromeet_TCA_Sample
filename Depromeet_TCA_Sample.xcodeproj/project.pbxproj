@@ -15,6 +15,7 @@
 		8C038B4529EA682C00A66FA9 /* Depromeet_TCA_SampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B4429EA682C00A66FA9 /* Depromeet_TCA_SampleUITests.swift */; };
 		8C038B4729EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B4629EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift */; };
 		8C038B5529EA68CE00A66FA9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8C038B5429EA68CE00A66FA9 /* ComposableArchitecture */; };
+		8C038B5829EA6C9000A66FA9 /* TCACoordinators in Frameworks */ = {isa = PBXBuildFile; productRef = 8C038B5729EA6C9000A66FA9 /* TCACoordinators */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C038B5829EA6C9000A66FA9 /* TCACoordinators in Frameworks */,
 				8C038B5529EA68CE00A66FA9 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +151,7 @@
 			name = Depromeet_TCA_Sample;
 			packageProductDependencies = (
 				8C038B5429EA68CE00A66FA9 /* ComposableArchitecture */,
+				8C038B5729EA6C9000A66FA9 /* TCACoordinators */,
 			);
 			productName = Depromeet_TCA_Sample;
 			productReference = 8C038B2529EA682B00A66FA9 /* Depromeet_TCA_Sample.app */;
@@ -224,6 +227,7 @@
 			mainGroup = 8C038B1C29EA682B00A66FA9;
 			packageReferences = (
 				8C038B5329EA68CE00A66FA9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				8C038B5629EA6C9000A66FA9 /* XCRemoteSwiftPackageReference "TCACoordinators" */,
 			);
 			productRefGroup = 8C038B2629EA682B00A66FA9 /* Products */;
 			projectDirPath = "";
@@ -630,6 +634,14 @@
 				minimumVersion = 0.52.0;
 			};
 		};
+		8C038B5629EA6C9000A66FA9 /* XCRemoteSwiftPackageReference "TCACoordinators" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/johnpatrickmorgan/TCACoordinators.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -637,6 +649,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8C038B5329EA68CE00A66FA9 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
 			productName = ComposableArchitecture;
+		};
+		8C038B5729EA6C9000A66FA9 /* TCACoordinators */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8C038B5629EA6C9000A66FA9 /* XCRemoteSwiftPackageReference "TCACoordinators" */;
+			productName = TCACoordinators;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
