@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
-
+import ComposableArchitecture
+import TCACoordinators
 @main
 struct Depromeet_TCA_SampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RepoSearchView(store: Store(
+                initialState: RepoSearchStore.State(),
+                reducer: RepoSearchStore()._printChanges())
+            )
         }
     }
 }

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8C038B2929EA682B00A66FA9 /* Depromeet_TCA_SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B2829EA682B00A66FA9 /* Depromeet_TCA_SampleApp.swift */; };
-		8C038B2B29EA682B00A66FA9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B2A29EA682B00A66FA9 /* ContentView.swift */; };
 		8C038B2D29EA682C00A66FA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C038B2C29EA682C00A66FA9 /* Assets.xcassets */; };
 		8C038B3129EA682C00A66FA9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C038B3029EA682C00A66FA9 /* Preview Assets.xcassets */; };
 		8C038B3B29EA682C00A66FA9 /* Depromeet_TCA_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B3A29EA682C00A66FA9 /* Depromeet_TCA_SampleTests.swift */; };
@@ -16,6 +15,19 @@
 		8C038B4729EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B4629EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift */; };
 		8C038B5529EA68CE00A66FA9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8C038B5429EA68CE00A66FA9 /* ComposableArchitecture */; };
 		8C038B5829EA6C9000A66FA9 /* TCACoordinators in Frameworks */ = {isa = PBXBuildFile; productRef = 8C038B5729EA6C9000A66FA9 /* TCACoordinators */; };
+		8C038B5B29EA6D8000A66FA9 /* RepoSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B5A29EA6D8000A66FA9 /* RepoSearchView.swift */; };
+		8C038B5D29EA6D8900A66FA9 /* RepoSearchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B5C29EA6D8900A66FA9 /* RepoSearchStore.swift */; };
+		8C038B6E29EB078800A66FA9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B6D29EB078800A66FA9 /* NetworkError.swift */; };
+		8C038B7129EB0B5900A66FA9 /* RepoSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B7029EB0B5900A66FA9 /* RepoSearchClient.swift */; };
+		8C038B7329EB12A100A66FA9 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B7229EB12A100A66FA9 /* NetworkProvider.swift */; };
+		8C038B7929EBE60600A66FA9 /* RepoSearchResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B7829EBE60600A66FA9 /* RepoSearchResponseDTO.swift */; };
+		8C038B7B29EBE61100A66FA9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B7A29EBE61100A66FA9 /* Repository.swift */; };
+		8C038B8029EBFA1E00A66FA9 /* RepoSearchRequestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B7F29EBFA1E00A66FA9 /* RepoSearchRequestDTO.swift */; };
+		8C038B8329EBFEE300A66FA9 /* Encodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8229EBFEE300A66FA9 /* Encodable.swift */; };
+		8C038B8529EC160D00A66FA9 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8429EC160C00A66FA9 /* EndPoint.swift */; };
+		8C038B8829EC164800A66FA9 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8729EC164800A66FA9 /* Requestable.swift */; };
+		8C038B8A29EC169500A66FA9 /* Responsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8929EC169500A66FA9 /* Responsable.swift */; };
+		8C038B8C29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8B29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +50,6 @@
 /* Begin PBXFileReference section */
 		8C038B2529EA682B00A66FA9 /* Depromeet_TCA_Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Depromeet_TCA_Sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C038B2829EA682B00A66FA9 /* Depromeet_TCA_SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depromeet_TCA_SampleApp.swift; sourceTree = "<group>"; };
-		8C038B2A29EA682B00A66FA9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8C038B2C29EA682C00A66FA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8C038B2E29EA682C00A66FA9 /* Depromeet_TCA_Sample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Depromeet_TCA_Sample.entitlements; sourceTree = "<group>"; };
 		8C038B3029EA682C00A66FA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,6 +58,20 @@
 		8C038B4029EA682C00A66FA9 /* Depromeet_TCA_SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Depromeet_TCA_SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C038B4429EA682C00A66FA9 /* Depromeet_TCA_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depromeet_TCA_SampleUITests.swift; sourceTree = "<group>"; };
 		8C038B4629EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depromeet_TCA_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8C038B5A29EA6D8000A66FA9 /* RepoSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchView.swift; sourceTree = "<group>"; };
+		8C038B5C29EA6D8900A66FA9 /* RepoSearchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchStore.swift; sourceTree = "<group>"; };
+		8C038B6D29EB078800A66FA9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		8C038B7029EB0B5900A66FA9 /* RepoSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchClient.swift; sourceTree = "<group>"; };
+		8C038B7229EB12A100A66FA9 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		8C038B7429EBD92A00A66FA9 /* Depromeet-TCA-Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Depromeet-TCA-Sample-Info.plist"; path = "Depromeet_TCA_Sample/Resource/Depromeet-TCA-Sample-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8C038B7829EBE60600A66FA9 /* RepoSearchResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchResponseDTO.swift; sourceTree = "<group>"; };
+		8C038B7A29EBE61100A66FA9 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		8C038B7F29EBFA1E00A66FA9 /* RepoSearchRequestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchRequestDTO.swift; sourceTree = "<group>"; };
+		8C038B8229EBFEE300A66FA9 /* Encodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Encodable.swift; sourceTree = "<group>"; };
+		8C038B8429EC160C00A66FA9 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		8C038B8729EC164800A66FA9 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		8C038B8929EC169500A66FA9 /* Responsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responsable.swift; sourceTree = "<group>"; };
+		8C038B8B29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchAPIEndPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +124,12 @@
 		8C038B2729EA682B00A66FA9 /* Depromeet_TCA_Sample */ = {
 			isa = PBXGroup;
 			children = (
-				8C038B2829EA682B00A66FA9 /* Depromeet_TCA_SampleApp.swift */,
-				8C038B2A29EA682B00A66FA9 /* ContentView.swift */,
-				8C038B2C29EA682C00A66FA9 /* Assets.xcassets */,
-				8C038B2E29EA682C00A66FA9 /* Depromeet_TCA_Sample.entitlements */,
+				8C038B5E29EAB83500A66FA9 /* Application */,
+				8C038B6F29EB0B2300A66FA9 /* Dependency */,
+				8C038B6329EAB9EC00A66FA9 /* Data */,
+				8C038B6729EABB9500A66FA9 /* Util */,
+				8C038B6A29EABBEF00A66FA9 /* DesignSystem */,
+				8C038B6629EABAD000A66FA9 /* Resource */,
 				8C038B2F29EA682C00A66FA9 /* Preview Content */,
 			);
 			path = Depromeet_TCA_Sample;
@@ -131,6 +158,185 @@
 				8C038B4629EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift */,
 			);
 			path = Depromeet_TCA_SampleUITests;
+			sourceTree = "<group>";
+		};
+		8C038B5929EA6D6400A66FA9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B2829EA682B00A66FA9 /* Depromeet_TCA_SampleApp.swift */,
+				8C038B5F29EAB85800A66FA9 /* RepoSearch */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8C038B5E29EAB83500A66FA9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B5929EA6D6400A66FA9 /* View */,
+				8C038B8D29EC283E00A66FA9 /* Store */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8C038B5F29EAB85800A66FA9 /* RepoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B5A29EA6D8000A66FA9 /* RepoSearchView.swift */,
+			);
+			path = RepoSearch;
+			sourceTree = "<group>";
+		};
+		8C038B6329EAB9EC00A66FA9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B7E29EBFA0D00A66FA9 /* RequestDTO */,
+				8C038B7729EBE5F000A66FA9 /* ResponseDTO */,
+				8C038B6429EAB9F500A66FA9 /* Model */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		8C038B6429EAB9F500A66FA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B7A29EBE61100A66FA9 /* Repository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8C038B6529EAB9FC00A66FA9 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B7629EBE27100A66FA9 /* RepoSearch */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		8C038B6629EABAD000A66FA9 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B7429EBD92A00A66FA9 /* Depromeet-TCA-Sample-Info.plist */,
+				8C038B2E29EA682C00A66FA9 /* Depromeet_TCA_Sample.entitlements */,
+				8C038B2C29EA682C00A66FA9 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		8C038B6729EABB9500A66FA9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B8129EBFED900A66FA9 /* Extension */,
+				8C038B6C29EB06C800A66FA9 /* Network */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		8C038B6A29EABBEF00A66FA9 /* DesignSystem */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B9029EC287600A66FA9 /* Images */,
+				8C038B8F29EC287000A66FA9 /* Colors */,
+				8C038B6B29EABBFA00A66FA9 /* Component */,
+			);
+			path = DesignSystem;
+			sourceTree = "<group>";
+		};
+		8C038B6B29EABBFA00A66FA9 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		8C038B6C29EB06C800A66FA9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B8629EC162200A66FA9 /* EndPoint */,
+				8C038B6D29EB078800A66FA9 /* NetworkError.swift */,
+				8C038B7229EB12A100A66FA9 /* NetworkProvider.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8C038B6F29EB0B2300A66FA9 /* Dependency */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B6529EAB9FC00A66FA9 /* Client */,
+			);
+			path = Dependency;
+			sourceTree = "<group>";
+		};
+		8C038B7629EBE27100A66FA9 /* RepoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B7029EB0B5900A66FA9 /* RepoSearchClient.swift */,
+				8C038B8B29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift */,
+			);
+			path = RepoSearch;
+			sourceTree = "<group>";
+		};
+		8C038B7729EBE5F000A66FA9 /* ResponseDTO */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B7829EBE60600A66FA9 /* RepoSearchResponseDTO.swift */,
+			);
+			path = ResponseDTO;
+			sourceTree = "<group>";
+		};
+		8C038B7E29EBFA0D00A66FA9 /* RequestDTO */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B7F29EBFA1E00A66FA9 /* RepoSearchRequestDTO.swift */,
+			);
+			path = RequestDTO;
+			sourceTree = "<group>";
+		};
+		8C038B8129EBFED900A66FA9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B8229EBFEE300A66FA9 /* Encodable.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8C038B8629EC162200A66FA9 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B8429EC160C00A66FA9 /* EndPoint.swift */,
+				8C038B8729EC164800A66FA9 /* Requestable.swift */,
+				8C038B8929EC169500A66FA9 /* Responsable.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		8C038B8D29EC283E00A66FA9 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B8E29EC284A00A66FA9 /* RepoSearch */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		8C038B8E29EC284A00A66FA9 /* RepoSearch */ = {
+			isa = PBXGroup;
+			children = (
+				8C038B5C29EA6D8900A66FA9 /* RepoSearchStore.swift */,
+			);
+			path = RepoSearch;
+			sourceTree = "<group>";
+		};
+		8C038B8F29EC287000A66FA9 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		8C038B9029EC287600A66FA9 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +477,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C038B2B29EA682B00A66FA9 /* ContentView.swift in Sources */,
+				8C038B8A29EC169500A66FA9 /* Responsable.swift in Sources */,
+				8C038B5B29EA6D8000A66FA9 /* RepoSearchView.swift in Sources */,
+				8C038B8C29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift in Sources */,
+				8C038B6E29EB078800A66FA9 /* NetworkError.swift in Sources */,
 				8C038B2929EA682B00A66FA9 /* Depromeet_TCA_SampleApp.swift in Sources */,
+				8C038B7B29EBE61100A66FA9 /* Repository.swift in Sources */,
+				8C038B7929EBE60600A66FA9 /* RepoSearchResponseDTO.swift in Sources */,
+				8C038B8529EC160D00A66FA9 /* EndPoint.swift in Sources */,
+				8C038B5D29EA6D8900A66FA9 /* RepoSearchStore.swift in Sources */,
+				8C038B7129EB0B5900A66FA9 /* RepoSearchClient.swift in Sources */,
+				8C038B7329EB12A100A66FA9 /* NetworkProvider.swift in Sources */,
+				8C038B8829EC164800A66FA9 /* Requestable.swift in Sources */,
+				8C038B8029EBFA1E00A66FA9 /* RepoSearchRequestDTO.swift in Sources */,
+				8C038B8329EBFEE300A66FA9 /* Encodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,7 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Depromeet_TCA_Sample/Depromeet_TCA_Sample.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Depromeet_TCA_Sample/Resource/Depromeet_TCA_Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Depromeet_TCA_Sample/Preview Content\"";
@@ -431,6 +649,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Depromeet_TCA_Sample/Resource/Depromeet-TCA-Sample-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -439,9 +658,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -449,10 +668,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parkhj0423.Depromeet-TCA-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -461,7 +682,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Depromeet_TCA_Sample/Depromeet_TCA_Sample.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Depromeet_TCA_Sample/Resource/Depromeet_TCA_Sample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Depromeet_TCA_Sample/Preview Content\"";
@@ -469,6 +690,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Depromeet_TCA_Sample/Resource/Depromeet-TCA-Sample-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -477,9 +699,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -487,10 +709,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.parkhj0423.Depromeet-TCA-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
