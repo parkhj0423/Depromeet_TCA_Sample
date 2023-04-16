@@ -70,6 +70,8 @@ struct RepoSearchView: View {
                     }
                 }
                 .foregroundColor(.white)
+            
+                Divider()
             }
         }
     }
