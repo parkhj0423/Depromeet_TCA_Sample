@@ -34,7 +34,7 @@ struct RepoSearchView: View {
     //MARK: Searchable 안쓰고 SearchBar 직접 구현했을때
     private func searchView(_ viewStore : ViewStoreOf<RepoSearchStore>) -> some View {
         HStack {
-            TextField(text: Binding { viewStore.keyword } set: { viewStore.send(.keywordChanged($0)) }) {
+            TextField(text: viewStore.binding(\.$keyword)) {
                 Text("Type Keyword to find repos!!")
                     .font(.caption)
             }
