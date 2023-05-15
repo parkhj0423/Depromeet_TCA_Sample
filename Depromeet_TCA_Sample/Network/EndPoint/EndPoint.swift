@@ -14,11 +14,13 @@ struct Endpoint<R>: Networkable {
     
     var path: String
     var httpMethod: HTTPMethod
-    var queryParameter: Encodable
+    var queryParameters: Encodable?
+    var bodyParameters : Encodable?
     
-    init(path: String, httpMethod: HTTPMethod, queryParameter: Encodable) {
+    init(path: String, httpMethod: HTTPMethod, queryParameters: Encodable? = nil, bodyParameters : Encodable? = nil) {
         self.path = path
         self.httpMethod = httpMethod
-        self.queryParameter = queryParameter
+        self.queryParameters = queryParameters
+        self.bodyParameters = bodyParameters
     }
 }

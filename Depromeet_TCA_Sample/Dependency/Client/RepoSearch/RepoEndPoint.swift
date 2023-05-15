@@ -7,8 +7,13 @@
 
 import Foundation
 
+struct EmptyData : Decodable {
+    
+    
+}
+
 struct RepoSearchAPIEndPoint {
     static func repoSearch(_ requestDTO: RepoSearchRequestDTO) -> Endpoint<RepoSearchResponseDTO> {
-        return Endpoint(path: "search/repositories", httpMethod: .get, queryParameter: requestDTO )
+        return Endpoint(path: "search/repositories", httpMethod: .get, queryParameters: requestDTO)
     }
 }

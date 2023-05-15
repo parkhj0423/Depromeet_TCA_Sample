@@ -12,30 +12,56 @@ public enum NetworkError: Error, Equatable {
         return lhs.errorMessage == rhs.errorMessage
     }
     
+    case urlRequestError(URLRequestError)
     case decodingError
+    case encodingError
     case invalidURLError
     case noResponseError
     case serverError
     case badRequestError
+    case authorizationError
     case internetConnectionError
     case unknownError
     
     var errorMessage: String {
         switch self {
+        case let .urlRequestError(urlRequestError):
+              return urlRequestError.errorMessage
         case .decodingError :
             return "Decoding Error"
+        case .encodingError :
+            return "Encoding Error"
         case .invalidURLError :
             return "Invalid URL"
         case .noResponseError :
             return "No Response"
         case .serverError :
             return "Server Error"
+        case .authorizationError :
+            return "Authorization Error"
         case .badRequestError :
             return "Bad Request From Client"
         case .internetConnectionError :
             return "Internet Connection is unstable"
         case .unknownError :
             return "Unknown Error"
+        }
+    }
+    
+    public enum URLRequestError: Error {
+        case urlComponentError
+        case queryEncodingError
+        case makeURLError
+        
+        var errorMessage: String {
+            switch self {
+            case .urlComponentError:
+                return "urlComponentError"
+            case .queryEncodingError:
+                return "queryEncodingError"
+            case .makeURLError:
+                return "makeURLError"
+            }
         }
     }
 }

@@ -18,9 +18,9 @@ extension RepoSearchClient: DependencyKey {
             let repoSearchRequestDTO = RepoSearchRequestDTO(searchText: searchText)
             let apiEndPoint = RepoSearchAPIEndPoint.repoSearch(repoSearchRequestDTO)
             
-            let response = try await NetworkProvider.shared.sendRequest(apiEndPoint)
+            let response = try await NetworkProvider.shared.sendRequest(apiEndPoint).toDomain()
             
-            return response.toDomain()
+            return response
         }
     )
     

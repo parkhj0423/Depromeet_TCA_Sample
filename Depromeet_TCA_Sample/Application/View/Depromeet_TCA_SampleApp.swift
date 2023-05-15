@@ -12,9 +12,9 @@ import TCACoordinators
 struct Depromeet_TCA_SampleApp: App {
     var body: some Scene {
         WindowGroup {
-            RepoSearchView(store: Store(
-                initialState: RepoSearchStore.State(),
-                reducer: RepoSearchStore()._printChanges())
+            RepoSearchListView(store: Store(
+                initialState: RepoSearchListStore.State(),
+                reducer: RepoSearchListStore())
             )
         }
     }

@@ -15,8 +15,8 @@
 		8C038B4729EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B4629EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift */; };
 		8C038B5529EA68CE00A66FA9 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 8C038B5429EA68CE00A66FA9 /* ComposableArchitecture */; };
 		8C038B5829EA6C9000A66FA9 /* TCACoordinators in Frameworks */ = {isa = PBXBuildFile; productRef = 8C038B5729EA6C9000A66FA9 /* TCACoordinators */; };
-		8C038B5B29EA6D8000A66FA9 /* RepoSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B5A29EA6D8000A66FA9 /* RepoSearchView.swift */; };
-		8C038B5D29EA6D8900A66FA9 /* RepoSearchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B5C29EA6D8900A66FA9 /* RepoSearchStore.swift */; };
+		8C038B5B29EA6D8000A66FA9 /* RepoSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B5A29EA6D8000A66FA9 /* RepoSearchListView.swift */; };
+		8C038B5D29EA6D8900A66FA9 /* RepoSearchListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B5C29EA6D8900A66FA9 /* RepoSearchListStore.swift */; };
 		8C038B6E29EB078800A66FA9 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B6D29EB078800A66FA9 /* NetworkError.swift */; };
 		8C038B7129EB0B5900A66FA9 /* RepoSearchClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B7029EB0B5900A66FA9 /* RepoSearchClient.swift */; };
 		8C038B7329EB12A100A66FA9 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B7229EB12A100A66FA9 /* NetworkProvider.swift */; };
@@ -27,7 +27,10 @@
 		8C038B8529EC160D00A66FA9 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8429EC160C00A66FA9 /* EndPoint.swift */; };
 		8C038B8829EC164800A66FA9 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8729EC164800A66FA9 /* Requestable.swift */; };
 		8C038B8A29EC169500A66FA9 /* Responsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8929EC169500A66FA9 /* Responsable.swift */; };
-		8C038B8C29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8B29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift */; };
+		8C038B8C29EC18D300A66FA9 /* RepoEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C038B8B29EC18D300A66FA9 /* RepoEndPoint.swift */; };
+		8CA37AF829F2D7240020213B /* RepoSearchItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA37AF729F2D7240020213B /* RepoSearchItemStore.swift */; };
+		8CA37AFA29F2D7340020213B /* RepoSearchItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA37AF929F2D7340020213B /* RepoSearchItemView.swift */; };
+		8CA37AFC29F3A1F40020213B /* RepoSearchDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA37AFB29F3A1F40020213B /* RepoSearchDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +61,8 @@
 		8C038B4029EA682C00A66FA9 /* Depromeet_TCA_SampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Depromeet_TCA_SampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C038B4429EA682C00A66FA9 /* Depromeet_TCA_SampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depromeet_TCA_SampleUITests.swift; sourceTree = "<group>"; };
 		8C038B4629EA682C00A66FA9 /* Depromeet_TCA_SampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Depromeet_TCA_SampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8C038B5A29EA6D8000A66FA9 /* RepoSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchView.swift; sourceTree = "<group>"; };
-		8C038B5C29EA6D8900A66FA9 /* RepoSearchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchStore.swift; sourceTree = "<group>"; };
+		8C038B5A29EA6D8000A66FA9 /* RepoSearchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListView.swift; sourceTree = "<group>"; };
+		8C038B5C29EA6D8900A66FA9 /* RepoSearchListStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchListStore.swift; sourceTree = "<group>"; };
 		8C038B6D29EB078800A66FA9 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		8C038B7029EB0B5900A66FA9 /* RepoSearchClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchClient.swift; sourceTree = "<group>"; };
 		8C038B7229EB12A100A66FA9 /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
@@ -71,7 +74,10 @@
 		8C038B8429EC160C00A66FA9 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		8C038B8729EC164800A66FA9 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		8C038B8929EC169500A66FA9 /* Responsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responsable.swift; sourceTree = "<group>"; };
-		8C038B8B29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchAPIEndPoint.swift; sourceTree = "<group>"; };
+		8C038B8B29EC18D300A66FA9 /* RepoEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoEndPoint.swift; sourceTree = "<group>"; };
+		8CA37AF729F2D7240020213B /* RepoSearchItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchItemStore.swift; sourceTree = "<group>"; };
+		8CA37AF929F2D7340020213B /* RepoSearchItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchItemView.swift; sourceTree = "<group>"; };
+		8CA37AFB29F3A1F40020213B /* RepoSearchDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 				8C038B5E29EAB83500A66FA9 /* Application */,
 				8C038B6F29EB0B2300A66FA9 /* Dependency */,
 				8C038B6329EAB9EC00A66FA9 /* Data */,
+				8C038B6C29EB06C800A66FA9 /* Network */,
 				8C038B6729EABB9500A66FA9 /* Util */,
 				8C038B6A29EABBEF00A66FA9 /* DesignSystem */,
 				8C038B6629EABAD000A66FA9 /* Resource */,
@@ -181,7 +188,9 @@
 		8C038B5F29EAB85800A66FA9 /* RepoSearch */ = {
 			isa = PBXGroup;
 			children = (
-				8C038B5A29EA6D8000A66FA9 /* RepoSearchView.swift */,
+				8C038B5A29EA6D8000A66FA9 /* RepoSearchListView.swift */,
+				8CA37AF929F2D7340020213B /* RepoSearchItemView.swift */,
+				8CA37AFB29F3A1F40020213B /* RepoSearchDetailView.swift */,
 			);
 			path = RepoSearch;
 			sourceTree = "<group>";
@@ -226,7 +235,6 @@
 			isa = PBXGroup;
 			children = (
 				8C038B8129EBFED900A66FA9 /* Extension */,
-				8C038B6C29EB06C800A66FA9 /* Network */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -270,7 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				8C038B7029EB0B5900A66FA9 /* RepoSearchClient.swift */,
-				8C038B8B29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift */,
+				8C038B8B29EC18D300A66FA9 /* RepoEndPoint.swift */,
 			);
 			path = RepoSearch;
 			sourceTree = "<group>";
@@ -320,7 +328,8 @@
 		8C038B8E29EC284A00A66FA9 /* RepoSearch */ = {
 			isa = PBXGroup;
 			children = (
-				8C038B5C29EA6D8900A66FA9 /* RepoSearchStore.swift */,
+				8C038B5C29EA6D8900A66FA9 /* RepoSearchListStore.swift */,
+				8CA37AF729F2D7240020213B /* RepoSearchItemStore.swift */,
 			);
 			path = RepoSearch;
 			sourceTree = "<group>";
@@ -478,16 +487,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C038B8A29EC169500A66FA9 /* Responsable.swift in Sources */,
-				8C038B5B29EA6D8000A66FA9 /* RepoSearchView.swift in Sources */,
-				8C038B8C29EC18D300A66FA9 /* RepoSearchAPIEndPoint.swift in Sources */,
+				8CA37AFC29F3A1F40020213B /* RepoSearchDetailView.swift in Sources */,
+				8C038B5B29EA6D8000A66FA9 /* RepoSearchListView.swift in Sources */,
+				8C038B8C29EC18D300A66FA9 /* RepoEndPoint.swift in Sources */,
 				8C038B6E29EB078800A66FA9 /* NetworkError.swift in Sources */,
 				8C038B2929EA682B00A66FA9 /* Depromeet_TCA_SampleApp.swift in Sources */,
 				8C038B7B29EBE61100A66FA9 /* Repository.swift in Sources */,
 				8C038B7929EBE60600A66FA9 /* RepoSearchResponseDTO.swift in Sources */,
 				8C038B8529EC160D00A66FA9 /* EndPoint.swift in Sources */,
-				8C038B5D29EA6D8900A66FA9 /* RepoSearchStore.swift in Sources */,
+				8C038B5D29EA6D8900A66FA9 /* RepoSearchListStore.swift in Sources */,
+				8CA37AFA29F2D7340020213B /* RepoSearchItemView.swift in Sources */,
 				8C038B7129EB0B5900A66FA9 /* RepoSearchClient.swift in Sources */,
 				8C038B7329EB12A100A66FA9 /* NetworkProvider.swift in Sources */,
+				8CA37AF829F2D7240020213B /* RepoSearchItemStore.swift in Sources */,
 				8C038B8829EC164800A66FA9 /* Requestable.swift in Sources */,
 				8C038B8029EBFA1E00A66FA9 /* RepoSearchRequestDTO.swift in Sources */,
 				8C038B8329EBFEE300A66FA9 /* Encodable.swift in Sources */,

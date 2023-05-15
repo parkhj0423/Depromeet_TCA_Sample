@@ -8,12 +8,12 @@
 import Foundation
 import ComposableArchitecture
 
-struct RepoSearchStore : ReducerProtocol {
+struct RepoSearchListStore : ReducerProtocol {
     @Dependency(\.repoSearchClient) var repoSearchClient
     
     struct State : Equatable {
         @BindingState var keyword = ""
-        var repoList : [Repository] = []
+        var repoList : IdentifiedArrayOf<RepoSearchItemStore.State> = []
         var isLoading : Bool = false
     }
     
@@ -21,7 +21,8 @@ struct RepoSearchStore : ReducerProtocol {
         case binding(BindingAction<State>)
         case keywordChanged(String)
         case searchByKeyword
-        case searchByKeywordResponse(TaskResult<[Repository]>)
+        case searchByKeywordResponse(TaskResult<IdentifiedArrayOf<RepoSearchItemStore.State>>)
+        case forEachRepos(id : RepoSearchItemStore.State.ID, action : RepoSearchItemStore.Action)
     }
     
     var body: some ReducerProtocol<State, Action> {
@@ -50,11 +51,21 @@ struct RepoSearchStore : ReducerProtocol {
                 state.repoList = response
                 return .none
                 
-            case let .searchByKeywordResponse(.failure(error)):
-                print(error.localizedDescription)
+            case .searchByKeywordResponse(.failure):
                 state.isLoading = false
                 return .none
+            case .forEachRepos(id: let id, action: .tapStarButton) :
+                guard let index = state.repoList.firstIndex(where: { $0.id == id }) else {
+                    return .none
+                }
+                
+                state.repoList[index].isStar.toggle()
+                
+                return .none
             }
+        }
+        .forEach(\.repoList, action: /Action.forEachRepos(id: action:)) {
+            RepoSearchItemStore()
         }
     }
     

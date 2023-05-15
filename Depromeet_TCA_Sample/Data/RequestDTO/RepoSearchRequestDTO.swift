@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct RepoSearchRequestDTO: Encodable {
+struct RepoSearchRequestDTO: Encodable, Decodable {
   let searchText: String
 
   enum CodingKeys: String, CodingKey {

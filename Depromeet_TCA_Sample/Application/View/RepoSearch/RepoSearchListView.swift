@@ -8,9 +8,9 @@
 import SwiftUI
 import ComposableArchitecture
 
-struct RepoSearchView: View {
+struct RepoSearchListView: View {
     
-    let store : StoreOf<RepoSearchStore>
+    let store : StoreOf<RepoSearchListStore>
     
     var body: some View {
         WithViewStore(store) { viewStore in
@@ -32,7 +32,7 @@ struct RepoSearchView: View {
     }
     
     //MARK: Searchable 안쓰고 SearchBar 직접 구현했을때
-    private func searchView(_ viewStore : ViewStoreOf<RepoSearchStore>) -> some View {
+    private func searchView(_ viewStore : ViewStoreOf<RepoSearchListStore>) -> some View {
         HStack {
             TextField(text: viewStore.binding(\.$keyword)) {
                 Text("Type Keyword to find repos!!")
@@ -50,28 +50,12 @@ struct RepoSearchView: View {
     }
     
     @ViewBuilder
-    private func repoListView(_ viewStore : ViewStoreOf<RepoSearchStore>) -> some View {
+    private func repoListView(_ viewStore : ViewStoreOf<RepoSearchListStore>) -> some View {
         if viewStore.isLoading {
             ProgressView()
         } else {
-            ForEach(viewStore.repoList) { repo in
-                VStack(alignment : .leading, spacing: 20) {
-                    HStack {
-                        VStack(alignment: .leading) {
-                            Text(repo.name)
-                                .foregroundColor(.blue)
-                                .font(.title.bold())
-                            Text(repo.description)
-                        }
-                        
-                        Spacer()
-                        
-                        Text("★ \(repo.starCount) ★")
-                    }
-                }
-                .foregroundColor(.white)
-            
-                Divider()
+            ForEachStore(store.scope(state: \.repoList, action: RepoSearchListStore.Action.forEachRepos(id: action:))) { itemStore in
+                RepoSearchItemView(store : itemStore)                
             }
         }
     }
@@ -80,6 +64,6 @@ struct RepoSearchView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        RepoSearchView(store: Store(initialState: RepoSearchStore.State(), reducer: RepoSearchStore()))
+        RepoSearchListView(store: Store(initialState: RepoSearchListStore.State(), reducer: RepoSearchListStore()))
     }
 }
